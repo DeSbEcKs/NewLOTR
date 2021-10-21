@@ -1,0 +1,56 @@
+.visible
+{
+
+display:visible;
+	
+}
+
+.hidden
+{
+	display:none;
+	
+}
+
+img
+{
+	width: 70vw;
+}
+
+.div1{
+	background:rgba(45,25,10,0.8); 
+	color:white;
+}
+
+.div2{
+	margin-left:2px; 
+	position:absolute; 
+	display:inline-block; 
+	width:28vw; 
+	border: 1px solid;
+}
+
+.div3{
+	background-image: url('hdr_map_Holz.jpg');
+	border: 1px solid; 
+	text-align: left; 
+	padding: 10px;
+}
+
+h2
+{
+	margin-left:5px; 
+	text-align: left;
+}
+
+
+.img1
+{
+	width:26vw; 
+	margin-left:10px; 
+	margin-top:25px;
+}
+
+.bildtext
+{
+	width:27vw;
+}
