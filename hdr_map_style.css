@@ -25,7 +25,7 @@ img
 	margin-left:2px; 
 	position:absolute; 
 	display:inline-block; 
-	width:28vw; 
+	width:30vw; 
 	border: 1px solid;
 }
 
@@ -38,19 +38,13 @@ img
 
 h2
 {
-	margin-left:5px; 
-	text-align: left;
+	margin-left:25px; 
+	text-align: center;
 }
-
 
 .img1
 {
-	width:26vw; 
+	width:30vw; 
 	margin-left:10px; 
 	margin-top:25px;
-}
-
-.bildtext
-{
-	width:27vw;
 }
