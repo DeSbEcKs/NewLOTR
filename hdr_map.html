@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<!-- ACHTUNG! Der Titel muss immer angegeben werden! -->
 		<title>Karte, Mittelerde</title>
-		<link rel="stylesheet" href="dropdown.css">
+	
+		<!--Tom`s stuff-->
+		<link rel="stylesheet" href="hdr_startseite.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="hdr_startseite_suche.css">
+		
+		<!--Css-Sheet-->
 		<link rel="stylesheet" href="hdr_map_style.css">
 		<meta charset="utf-8">
 		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,200 +17,252 @@
 	</head>	
 	
 	
-	
-	
-	
 	<body>		
 		<div class="menu-bar">
-	<ul>
-
-	<li class="active"><a href="#"><i class="fa fa-shield"></i>Home</a></li>
-	<li><a href="#"><i class="fa fa-globe"></i>Mittelerde</a>
-		<div class="sub-menu-1">
 			<ul>
-				<li><a href="#">Mission</a></li>
-				<li><a href="#">Vision</a></li>
-				<li><a href="#">Team</a></li>
-			</ul>
-		</div>
-	</li>
-	<li><a href="#"><i class="fa fa-users"></i>Characters</a>
-		<div class="sub-menu-1">
-			<ul>
-				<li><a href="#">Web Desining</a></li>
-				<li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
-					<div class="sub-menu-2">
+				<li><a href="hdr_startseite.html"><i class="fa fa-shield"></i>Startseite</a></li>
+				<li><a href="#"><i class="fa fa-users"></i>Charaktere</a>
+					<div class="sub-menu-1">
 						<ul>
-							<li><a href="#">SEO</a></li>
-							<li><a href="#">Social media</a></li>
-							<li><a href="#">Email Marketing</a></li>
+							<li><a href="hdr_chars_the_good.html">Charaktere - Die Gefährten</a></li>
+							<li class="active"><a href="hdr_charaktere_bad.html">Charaktere - Die Bösen</a></li>
 						</ul>
 					</div>
 				</li>
-				<li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
-				<div class="sub-menu-2">
-						<ul>
-							<li><a href="#">Android App</a></li>
-							<li><a href="#">ios App</a></li>
-							<li><a href="#">Ionic App</a></li>
-							<li><a href="#">Flatter App</a></li>
-							<li><a href="#">Unity App</a></li>
-						</ul>
-					</div>		
-				</li>
+				<li><a href="hdr_Quiz.html"><i class="fa fa-check-square"></i>Quiz</a></li>
+				<li class="active"><a href="hdr_map.html"><i class="fa fa-globe"></i>Karte</a></li>
+				<li><a href="mediathek.html"></i>Mediathek</a></li>
+
+	
 			</ul>
+				<div class="search">
+					<div class="icon">
+						<div class="input">
+							<input type="text" placeholder="search" id="eingabe">
+						</div>
+						<button class="clear" onclick="window.find(document.getElementById('eingabe').value)">suchen</button>
+					</div>
+				</div>
+		
+
 		</div>
-	</li>
-	<li><a href="#"><i class="fa fa-users"></i>Clients</a></li>
-	<li><a href="#"><i class="fa fa-angellist"></i>Investers</a></li>
-	<li><a href="#"><i class="fa fa-inr"></i>Princing</a></li>
-	<li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
-	<li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
-		<div class="search">
-			<div class="icon">
-			<div class="input">
-				<input type="text" placeholder="search" id="mysearch"
-			</div>
-			<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
-		</div>
-			
-		<script>
-			const icon = document.querySelector('.icon');
-			const search = document.querySelector('.search')
-			icon.onclick = function(){
-			search.classList.toggle('active')
-			}
-		</script>		
-	</ul>
-	</div>
-	</br>
+	
 <!------- ^ Toms template ----------------------------------------------------------------------------------------------------------------------------------------->		
 		
 		
 		
 		<div class="div1">
-		
+			<!--Main-Pic-->
 			<img src="hdr_map_Mittelerde.jpg" usemap="#Mittelerde" alt="Mittelerde">
 			
 				<div class="div2">
 				   <div>
 						<div class="div3">
 							<h1>
-								<p>Places</p>
+								Places
 							</h1>
 						</div>
-						
-				
 					
-					
-					
-					
-					
-						<div  id="Isengard" class="hidden">
-							<img class="img1" src="hdr_map_Isengard.jpg"> 
-								<h2>Isengart</h2>
+
+						<div id="showIsengard" class="hidden">
+							<img class="img1" src="hdr_map_Isengard.jpg" alt="Isengart"> 
+							<h2>Isengart</h2>
 							<br>
-								<p class="img1"> Rabarber Rabarber Rabarber</p>
+							<p class="bildtext"> 
+								Isengard, also known as Angrenost ('Iron Fortress') in Sindarin, was one of the three major fortresses of Gondor, and held within it one of the realm's Palantiri.
+								However, in the latter half of the Third Age, the stronghold came into the possession of Saruman, becoming his personal realm and home until his defeat in the War of the Ring.
+							</p>
 						</div>
 						
 						
-						<div id="The_Shíre"  class="hidden">
-							<img class="img1" src="hdr_map_The_Shire.jpg"> 
-								<h2>The Shire</h2>
+						<div id="showMinas_Tirith" class="hidden">
+							<img class="img1" src="hdr_map_Minas_Tirith.png" alt="Minas Tirith"> 
+							<h2>Minas Tirith</h2>
 							<br>
-								<p class="img1"> Rohtkohl Rohtkohl Rohtkohl</p>
+							<p class="bildtext">
+								Minas Tirith, formerly and eventually again known as Minas Anor, was the capital city of Gondor from TA 1640 onward.
+								Many important events took place in and in front of the city, such as the Battle of the Pelennor Fields and the coronation of Aragorn II Elessar.
+							</p>
 						</div>
 						
 						
+						<div id="showOsgiliath" class="hidden">
+							<img class="img1" src="hdr_map_Osgiliath.jpg" alt="Osgiliath"> 
+							<h2>Osgiliath</h2>
+							<br>
+							<p class="bildtext">
+								Osgiliath was the first capital city of Gondor. During the War of the Ring, the abandoned city gained strategic importance as a crossing point over the Anduin, both for the Men of Gondor and Orcs of Mordor.
+								At the heart of Osgiliath was a great stone bridge over the river. On the bridge was a tower containing the famous Dome of Stars, which housed the city's palantír. Another important building (or possibly the same one) was the Great Hall, which initially served as a throne room for Isildur and Anárion.
+								Translated, its name means "Citadel of the Host of Stars".
+							</p>
+						</div>
 						
 						
+						<div   id="showMorannon" class="hidden">
+							<img class="img1" src="hdr_map_Morannon.png" alt="Morannon"> 
+							<h2>Morannon</h2>
+							<br>
+							<p class="bildtext">
+								The Black Gate or Morannon was a gate built across Cirith Gorgor, and the most fortified, direct entrance into Sauron's realm of Mordor.
+								The Black Gate was set in an impregnable black stone and iron wall that stretched from the Mountains of Ash in the north to the Ephel Dúath in the west. The wall had but a single gate set into its length and was patrolled unceasingly, with hundreds of Orc holes on either side in which lurked thousands of Orcs ready to attack. On either side were the two Towers of the Teeth, Narchost and Carchost.
+							</p>
+						</div>					
+						
+						
+						<div   id="showRivendell" class="hidden">
+							<img class="img1" src="hdr_map_Rivendell.jpg" alt="Rivendell"> 
+							<h2>Rivendell</h2>
+							<br>
+							<p class="bildtext">
+								Rivendell, also known as Imladris in Sindarin, was an Elven town and the house of Elrond located in Middle-earth. It is described as "The Last Homely House East of the Sea" in reference to Valinor, which was west of the Great Sea in Aman.
+							</p>
+						</div>			
+
+						
+						<div id="showThe_Shire"  class="hidden">
+							<img class="img1" src="hdr_map_The_Shire.jpg" alt="The Shire"> 
+							<h2>The Shire</h2>
+							<br>
+							<p class="bildtext">
+								The Shire is a region of J. R. R. Tolkien's fictional Middle-earth, described in The Lord of the Rings and other works. The Shire is an inland area settled exclusively by hobbits, the Shire-folk, largely sheltered from the goings-on in the rest of Middle-earth. It is in the northwest of the continent, in the region of Eriador and the Kingdom of Arnor.
+							</p>
+						</div>
+						
+						
+						<div id="showBree"  class="hidden">
+							<img class="img1" src="hdr_map_Bree.jpg" alt="Bree"> 
+							<h2>Bree</h2>
+							<br>
+							<p class="bildtext">
+								Bree was a village of Men and hobbits, located east of the Shire and south of Fornost in Eriador.
+								The village was bordered on the north side by Bree-hill, from which stretched a dike and hedge in a great semicircle protecting the town. This barrier had three gates, through which the Great East Road passed.
+							</p>
+						</div>
+						
+						
+						<div id="showLaketown"  class="hidden">
+							<img class="img1" src="hdr_map_Laketown.jpg" alt="Laketown"> 
+							<h2>Laketown</h2>
+							<br>
+							<p class="bildtext">
+								Lake-town, or Esgaroth (known fully as "Esgaroth upon the Long Lake"), was a small settlement of Men in the north-western part of the Long Lake in Rhovanion. The town was constructed entirely of wood and stands upon wooden pillars sunk into the bed of the Long Lake, south of the Lonely Mountain and east of Mirkwood. It seems that the town's prosperity was built on trade between the Men, Elves, and Dwarves of northern Middle-earth.
+								It was also known as the final resting place of the dragon Smaug, whose bones ended up at the bottom of the lake, and by whom it was destroyed.
+							</p>
+						</div>
+						
+						
+						<div id="showEdoras"  class="hidden">
+							<img class="img1" src="hdr_map_Edoras.jpg" alt="Edoras"> 
+							<h2>Edoras</h2>
+							<br>
+							<p class="bildtext"">
+								Edoras was the capital city of Rohan. Built principally of wood, Edoras was also where Rohan's kings were buried, in two lines of Barrows just outside the main gate. 
+								The land of Rohan was originally part of Gondor, but gained independence from it. The land was first known as "Rohan" to the Men of Gondor, and its people the Rohirrim, meaning 'the Horse-lords', but the people of Rohan called themselves the Eorlingas, sons of Eorl the Young, first King of Rohan, as the land of Calenardhon was given in gift to Eorl and his people by Cirion, Steward of Gondor, in thanks for their service to Gondor in battle against the Balchoth. Eorl swore an oath of friendship, and of aid when summoned, to the Lords of Gondor, and thus the Rohirrim became the greatest ally of the Men of Gondor throughout the Third Age and beyond. They were known for their cavalry and horse mastery, which was crucial in battles such as the Battle of the Hornburg and on the Pelennor Fields. 
+							</p>
+						</div>
+						
+						
+						<!--
+						<div id="show"  class="hidden">
+							<img class="img1" src=""> 
+								<h2></h2>
+							<br>
+								<p style="width:400px"> Hier steht die Bildbeschreibung...</p>
+						</div>
+						-->
+
 						
 					</div>
 				</div>
 		</div>
-		
-		
 
-		<div>
-			<map name="Mittelerde" .click="function()">
+		
+			<map name="Mittelerde" >
 
 			
 				<area 
-					shape="poly" 
-					coords="1581,965, 1551,1049, 1685,1042, 1707,999, 1669,967 "
+					shape="circle" 
+					coords="1626,1008,100"
 					href=""
-					target=""
 					alt="Isengard"
 					title="Isengard"
-					
+					id="Isengard"
 				>
 			
-				
 				<area 
 					shape="circle" 
 					coords="2414,1432,60"
 					href=""
-					target=""
 					alt="Minas_Tirith"
 					title="Minas Tirith"
+					id="Minas_Tirith"
 				>
 				
 				<area 
 					shape="circle" 
-					coords="2514,1478, 70"
+					coords="2514,1478,70"
 					href=""
-					target=""
 					alt="Osgiliath"
 					title="Osgiliath"
+					id="Osgiliath"
 				>
 				
 				<area 
 					shape="circle" 
 					coords="2604,1220,80"
 					href=""
-					target=""
 					alt="Morannon"
 					title="Morannon"
+					id="Morannon"
 				>
 				
 				<area 
 					shape="circle" 
 					coords="1857,380,50"
 					href=""
-					target=""
 					alt="Rivendell"
 					title="Rivendell"
+					id="Rivendell"
 				>
 				
 				<area 
 					shape="circle" 
 					coords="984,406,60"
 					href=""
-					target=""
-					alt="The_Shíre"
-					title="The Shíre"
+					alt="The_Shire"
+					title="The Shire"
+					id="The_Shire"
 					
 				>
-				
 				
 				<area 
 					shape="circle" 
 					coords="1249,420,50"
 					href=""
-					target=""
 					alt="Bree"
 					title="Bree"
+					id="Bree"
 				>
 				
 				<area 
 					shape="circle" 
 					coords="2555,218,40"
 					href=""
-					target=""
 					alt="Laketown"
 					title="Laketown"
+					id="Laketown"
 				>
 				
+				<area 
+					shape="circle" 
+					coords="1876,1250,60"
+					href=""
+					alt="Edoras"
+					title="Edoras"
+					id="Edoras"
+				> 
+				
+				<!--
 				<area 
 					shape="" 
 					coords=""
@@ -214,13 +270,12 @@
 					target=""
 					alt=""
 					title=""
-				>
+				> 
+				-->
 				
 			</map>
 			
-		</div>
-			
-			
+
 
 			<script src="jqery.min.js"></script>
 			<script src="hdr_map_styles.js"></script>
